@@ -13,7 +13,7 @@ class ChatGLM(object):
                  top_p=0.9,
                  logits_processor=None
                 ):
-        
+        self.top_p=top_p
         self.__dict__.update(locals())
         self.history =  [] if history is None else history
         
