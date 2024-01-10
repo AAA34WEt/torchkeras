@@ -10,7 +10,8 @@ class ChatGLM(object):
                  num_beams=1,
                  do_sample=True,
                  temperature=0.8,
-                 logits_processor=None
+                 logits_processor=None,
+                 top_p=0.9
                 ):
         
         self.__dict__.update(locals())
